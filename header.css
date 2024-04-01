@@ -1,0 +1,601 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);
+
+@font-face {
+  font-family: 'Playball';
+  src: url('../images/fonts/Playball-Regular.ttf') format('truetype');
+
+}
+@font-face {
+  font-family: 'Abhaya Libre SemiBold';
+  src: url('../images/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+
+}
+@font-face {
+  font-family: 'Abhaya Libre ExtraBold';
+  src: url('../images/fonts/AbhayaLibre-Bold.ttf') format('truetype');
+
+}
+@font-face {
+  font-family: 'Cantata One';
+  src: url('../images/fonts/CantataOne-Regular.ttf') format('truetype');
+
+}
+body {
+  background-color: #fff
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+.about_body {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+}
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-image: url("../images/about/image\ 19.svg");
+  background-repeat: no-repeat;
+  background-color: #e6c097;
+  background-size: cover;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+}
+.overlay-navigation {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  display: none;
+  opacity: 0;
+}
+nav,
+nav ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  background-image: url('./images/contact/bg_header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav ul li {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+ 
+}
+nav ul li a:hover {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: background-image 0.5s ease;
+  mix-blend-mode: screen;
+  opacity: 1 !important;
+  top: 12%;
+}
+nav ul li a:hover .hover-img {
+  display: block;
+  mix-blend-mode: screen;
+}
+nav ul li a:hover .menu_text_p p {
+  opacity: 1;
+}
+nav ul li a:hover .svg_line {
+  opacity: 1 !important;
+}
+
+nav ul li a:hover .nav_img {
+  display: none;
+  mix-blend-mode: screen;
+}
+nav ul li a:hover .menu_text_p {
+  padding-top: 0 !important;
+
+}
+.menu_text_p {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+
+}
+.menu_text_p p {
+
+  color: #FFF;
+  text-align: center;
+  font-family: "Cantata One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  opacity: 0.5;
+}
+
+nav li a {
+  position: relative;
+  top: 35%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Work sans', sans-serif;
+  display: block;
+  letter-spacing: 4px;
+  text-decoration: none;
+  height: auto;
+  text-align: center;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+
+}
+.nav_img {
+  width: 50%;
+  display: block;
+  transition: opacity 2s ease;
+  opacity: 0.5 !important;
+  padding: 0.5rem;
+}
+.hover-img {
+  display: none;
+  mix-blend-mode: screen;
+  transition: opacity 2s ease;
+  width: 90%;
+}
+.logo {
+  width: 200px;
+}
+.links_img {
+  display: block;
+  text-align: center;
+cursor: pointer;
+  transition: all .2s linear;
+  color: #fff;
+  line-height: 100%;
+  text-transform: none;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+.links_img img {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+}
+.svg_line {
+  padding: 1rem;
+  opacity: 0.5 !important;
+}
+
+.burger-icon,
+.close-icon {
+  cursor: pointer;
+}
+.close-icon {
+  display: none;
+  position: fixed;
+  margin-left: -30px !important;
+}
+.close-icon img {
+  width: 80% !important;
+}
+.burger-icon img {
+  max-width: 70%;
+}
+.open-overlay {
+  position: absolute;
+  right: 3rem;
+  top: 2.5rem;
+  z-index: 100;
+  display: block;
+  cursor: pointer;
+  padding: 0.8rem 0rem 0.1rem 0rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.open-overlay span {
+  cursor: pointer;
+  color: var(--8-c-5000, #8C5000);
+  text-align: center;
+  font-family: "Abhaya Libre ExtraBold";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.home a {
+  font-family: "Work Sans", sans-serif;
+  color: #222;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 50px;
+  padding-bottom: 3px;
+}
+.about_body a {
+  font-family: "Work Sans", sans-serif;
+  color: #222;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 50px;
+  padding-bottom: 3px;
+}
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  min-height: 150px;
+}
+.fixed-header header {
+  padding: 10px 0;
+}
+@media (min-width: 691px) and (max-width: 1024px) {
+  nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  nav ul li {
+    width: calc(50% - 20px) !important; 
+    flex: 0 0 auto !important;
+  }
+}
+@media (min-width: 300px)and (max-width: 690px) {
+  .open_overlay_inner {
+    position: relative;
+ 
+    width: 90px;
+    height: 40px;
+  }
+
+
+  .page-loader img{
+    width:50%;
+}
+
+  nav ul {
+    flex-direction: row !important;
+    overflow-x: auto !important; 
+    -webkit-overflow-scrolling: touch !important; 
+    scroll-snap-type: x mandatory !important; 
+  }
+  nav ul li {
+
+    display: flex !important;
+    align-items: center !important; 
+    justify-content: center !important; 
+    height: 100vh !important; 
+    flex-shrink: 0 !important;
+    scroll-snap-align: start;
+  }
+ 
+  nav ul li a {
+    font-size: 0;
+    top: 5% !important;
+    width: 100vw !important;
+  }
+  nav li a:after {
+    font-size: 0rem;
+   
+  }
+  .menu_text_p {
+  
+    padding-top: 0rem;
+  
+  }
+  .menu_text_p p {
+    font-size: 21px !important;
+    opacity: 0.5;
+  }
+  .nav_img {
+    opacity: 0.5 !important;
+    padding: 0rem;
+}
+  nav li a:hover:after {
+    transform: translateY(0);
+  }
+  .open-overlay {
+    right: 0.2rem;
+    top:3.2rem;
+  }
+
+  nav li a:before {
+    width: 25px;
+  }
+  .nav_img{
+    width:100%;
+    display: none;
+}
+.hover-img{
+  width:60%;
+  display: block;
+  mix-blend-mode: screen !important;
+}
+.links_img {
+  mix-blend-mode: screen !important;
+}
+.logo {
+  width: 120px;
+  
+}
+.home a {
+  font-family: "Work Sans", sans-serif;
+  color: #222;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 30px;
+  padding-bottom: 3px;
+ 
+}
+.open-overlay{
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:90px;
+  height: 50px;
+  padding-top: 0.2rem !important;
+  font-size: 0px !important;
+  position: fixed !important;
+
+}
+.open-overlay span{
+font-size: 0px !important;
+
+
+
+}
+
+.about_body a {
+
+  left: 30px;
+  padding-bottom: 3px;
+  
+}
+.close-icon {
+  display: none;
+  position: none !important;
+  width: 33px !important;
+  margin-left: 0px !important;
+  height: 33px;
+}
+.overlay_close {
+  position: absolute !important;
+  top: 0rem;
+  left: 19px !important;
+}
+nav ul {
+ 
+  background-image: url('./images/contact/bg_header.png');
+  background-size: initial;
+  
+
+}
+nav ul li  .hover-img {
+  display: block;
+  mix-blend-mode: screen;
+}
+nav ul li a .menu_text_p p {
+  opacity: 1;
+  font-size: 26px;
+}
+nav ul li a .svg_line {
+  opacity: 1 !important;
+}
+}
+@media (min-width: 1023px)and (max-width: 1300px){
+  .menu_text_p {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  
+  }
+  .menu_text_p p {
+  
+    color: #FFF;
+    text-align: center;
+    font-family: "Cantata One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .nav_img {
+  
+    opacity: 0.5 !important;
+    padding: 0rem;
+}
+
+}
+@media (min-width: 799px)and (max-width: 1000px){
+  .menu_text_p {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  
+  }
+  .menu_text_p p {
+  
+    color: #FFF;
+    text-align: center;
+    font-family: "Cantata One";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+  }
+  .nav_img {
+  
+    opacity: 0.5 !important;
+    padding: 0rem;
+}
+
+
+}
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; 
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+  min-height: 150px;
+}
+
+.fixed-header header {
+  padding: 10px 0; 
+ 
+}
+@media only screen and (device-width: 390px)
+/* Width of iPhone 14 */
+and (device-height: 844px)
+/* Height of iPhone 14 */
+and (-webkit-device-pixel-ratio: 3)
+/* Pixel ratio of iPhone 14 */
+and (orientation: portrait) {
+  .hover-img{
+    width:100%;
+    display: block;
+    mix-blend-mode: screen !important;
+  }
+  .links_img img{
+    mix-blend-mode: screen !important;
+  }
+}
+@media (min-width: 300px)and (max-width: 640px){
+  .burger-icon img{
+    max-width: 30% !important;
+  }
+  .open-overlay{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:90px;
+    height: 50px;
+    padding-top: 0.1rem !important;
+    font-size: 0px !important;
+  
+  }
+  .close-icon {
+    display: none;
+    position: fixed;
+    
+    margin-left: 0px !important;
+   
+  }
+
+}
+/* Landscape mode for 768x360 resolution */
+@media only screen and (min-width: 768px) and (max-height: 360px) and (orientation: landscape) {
+ 
+  nav ul li a:hover .hover-img {
+    display: block;
+    mix-blend-mode: screen;
+  }
+  nav ul li a:hover .menu_text_p p {
+    opacity: 1;
+  }
+  nav ul li a:hover .svg_line {
+    opacity: 1 !important;
+  }
+  
+  nav ul li a:hover .nav_img {
+    display: none;
+    mix-blend-mode: screen;
+  }
+  nav ul li a:hover .menu_text_p {
+    padding-top: 0 !important;
+  
+  }
+  .hover-img {
+    display: block;
+    width: 45%;
+   
+    transition: opacity 2s ease;
+
+    padding: 0.5rem;
+
+  }
+  .nav_img {
+    width: 35%;
+    display: none;
+    transition: opacity 2s ease;
+    opacity: 0.5 !important;
+    padding: 0.5rem;
+   
+  }
+  #custom-svg {
+    height: 60px; /* Adjusted height for smaller screens */
+  }
+  .fixed-header {
+    height:50px !important;
+  }
+.logo{
+  width:70%
+}
+  .menu_text_p {
+   
+    padding-top: 0rem;
+  
+  }
+  .menu_text_p p {
+  
+  
+    font-size: 18px !important;
+   
+    line-height: 120% !important;
+    opacity: 0.5;
+  }
+  nav li a {
+    position: relative;
+    top: 15% !important;
+    color: #fff;
+   
+  
+  }
+}

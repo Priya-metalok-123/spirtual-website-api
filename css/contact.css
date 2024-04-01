@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Playball';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/Playball-Regular.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+
+
+@font-face {
+    font-family: 'Abhaya Libre SemiBold';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/AbhayaLibre-SemiBold.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+@font-face {
+    font-family: 'Abhaya Libre ExtraBold';
+    /* Name you want to give to the font */
+    src: url('../images/fonts/AbhayaLibre-ExtraBold.ttf') format('truetype');
+    /* Path to your font file */
+}
+
+/* Path to your font file */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+
+}
+.success-message {
+    display: none;
+    color: rgb(249, 250, 201);
+    margin-top: 10px;
+}
+
+.contact_section1 {
+    background-image: url("../images/contact/bg_contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.contact_section1_inner {
+    padding: 5rem 2rem 2rem 0rem;
+   
+    width: 100%;
+    height: auto;
+}
+
+.contact_left_img_div {
+    /* padding-top: 5rem; */
+}
+
+.contact_left_img_div img {
+    max-width: 90%;
+    padding: 3rem;
+
+}
+
+.right_form {
+    padding-top: 7rem;
+}
+
+.input_bg {
+    background-image: url("../images/contact/input.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: auto;
+ 
+   padding: 0.4rem;
+    border-radius: 7px !important;
+
+
+
+}
+.input_inner_border{
+    border: 1px dashed var(--Linear, #8C5000);
+}
+
+.input_text {
+    background-image: url("../images/contact/inpu_text.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    /* border: solid 2px red; */
+    
+    /* padding: 2rem; */
+    padding: 0.4rem;
+    border-radius: 7px;
+
+}
+
+::placeholder {
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 1.2px;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input_submit {
+    background-image: url("../images/contact/submit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: 1px solid var(--Style, #A26E1A);
+    box-shadow: 0px 0px 9.9px 0px #784E23;
+
+}
+
+.input_submit span {
+    text-align: center;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-label {
+    text-align: center;
+    font-family: "Abhaya Libre ExtraBold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 51px;
+    letter-spacing: 1.8px;
+    background: var(--Linear, linear-gradient(180deg, #8C5000 17.41%, #533001 84.07%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left:0.6rem;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+}
+
+.form-control:focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.powered_div {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.powered_div p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Abhaya Libre SemiBold";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .contact_section1 {
+        background-image: url("../images/contact/bg_contact.png");
+        background-size:cover !important;
+        background-position: center;
+        overflow:auto;
+    }
+    .right_form {
+        padding-top: 0rem !important;
+    }
+       
+.contact_left_img_div img {
+    max-width: 100% !important;
+    padding: 3rem !important;
+
+}
+.input_submit span {
+    font-size: 22px !important;
+    line-height: 100% !important;
+}
+
+
+::placeholder {
+    font-size: 16px !important;
+    line-height: 120% !important;
+}
+.form-label {
+    font-size: 16px !important;
+    line-height: 100% !important;
+    letter-spacing: 1.8px !important;
+    padding-left:0.6rem !important;
+}
+.input_bg {
+  margin-bottom: 2px !important;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem !important;
+  border-radius: 10px !important;
+ 
+  background-size:150% !important;
+}
+.input_inner_border{
+    border: 1px dashed var(--Linear, #8C5000);
+    margin: 0.4rem !important;
+    
+}
+.input_text{
+    margin-bottom: 10px !important;
+}
+.powered_div {
+    
+    padding-top: 0rem !important;
+}
+.btn_sub_bottom{
+    margin-bottom: 10px !important;
+}
+
+}
+@media (min-width: 480px) and (max-width: 768px){
+    .input_bg {
+        margin-bottom: 16px !important;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem !important;
+        border-radius: 10px !important;
+       
+        background-size:150% !important;
+      }
+
+}
+@media (min-width: 769px) and (max-width: 992px) {
+   
+        .contact_section1 {
+            background-image: url("../images/contact/bg_contact.png");
+            background-size:cover !important;
+            background-position: center;
+            overflow:auto;
+        }
+        .contact_left_img_div img {
+            max-width: 70% !important;
+            padding: 3rem !important;
+          
+        
+        }
+        .contact_left_img_div {
+            
+            text-align: center;
+        }
+        .input_submit {
+           /* align-items: center !important;
+           justify-content: center !important;
+           text-align: center !important; */
+           margin: auto !important;
+        
+        }
+}
+
+@media (min-width: 2540px) and (max-width: 3000px) {}
+@media (min-width: 1300px) and (max-width: 1390px) {
+    .right_form {
+        padding-top: 2rem !important;
+    }
+    
+.contact_left_img_div img {
+    max-width: 100%;
+    padding: 3rem;
+}
+
+}
+@media (min-width: 1200px) and (max-width: 1290px) {
+    .right_form {
+        padding-top: 2rem !important;
+    }
+    
+.contact_left_img_div img {
+    max-width: 100%;
+    padding: 3rem;
+
+}
+
+}
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .contact_section1 {
+        background-image: url("../images/contact/bg_contact.png");
+        background-size:cover !important;
+        background-position: center;
+        overflow:auto;
+    }
+    .right_form {
+        padding-top: 2rem !important;
+    }
+    
+.contact_left_img_div img {
+    max-width: 80%;
+    padding: 3rem;
+
+}
+.input_submit span {
+    font-size: 22px;
+    line-height: 100%;
+}
+
+
+::placeholder {
+    font-size: 16px;
+    line-height: 100%;
+}
+.form-label {
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 1.8px;
+    padding-left:0.6rem;
+}
+.input_bg {
+  margin-bottom: 15px !important;
+  padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+  border-radius: 10px !important;
+  background-size: 110% !important;
+}
+.input_text{
+    margin-bottom: 10px !important;
+}
+.powered_div {
+    
+    padding-top: 0rem !important;
+}
+.btn_sub_bottom{
+    margin-bottom: 10px !important;
+}
+}
+@media (min-width: 1430px) and (max-width: 1450px) {
+   
+    .right_form {
+        padding-top: 7rem !important;
+    }
+    
+.contact_left_img_div img {
+    max-width: 80%;
+    padding: 3rem;
+
+}
+.input_submit span {
+    font-size: 22px;
+    line-height: 100%;
+}
+
+
+::placeholder {
+    font-size: 16px;
+    line-height: 100%;
+}
+.form-label {
+    font-size: 19px;
+    line-height: 100%;
+    letter-spacing: 1.8px;
+    padding-left:0.6rem;
+}
+.input_bg {
+  margin-bottom: 15px !important;
+  padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+  border-radius: 10px !important;
+  background-size: 110% !important;
+}
+.input_text{
+    margin-bottom: 10px !important;
+}
+.powered_div {
+    
+    padding-top: 0rem !important;
+}
+.btn_sub_bottom{
+    margin-bottom: 10px !important;
+}
+}
+@media (min-width: 2040px) and (max-width: 2570px) {
+    .right_form {
+        padding-top: 9rem !important;
+    }
+    .contact_left_img_div img {
+        max-width: 80% !important;
+        padding: 5rem 3rem 0rem 3rem !important;
+    
+    }
+    
+}
+@media (min-width: 300px) and (max-width: 390px){
+    .input_bg {
+        margin-bottom: 8px !important;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem !important;
+        border-radius: 10px !important;
+       
+        background-size:200% !important;
+      }
+      .contact_left_img_div img {
+        max-width: 100% !important;
+        padding: 1.5rem !important;
+    
+    }
+
+}
+
+
